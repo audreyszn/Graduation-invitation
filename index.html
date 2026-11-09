@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Audrey’s Graduation Lunch</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=Great+Vibes&display=swap">
+<style>
+:root{--ink:#000;--gold:#d4a93c;--paper:#0d0d0d;--card:#171717;--text:#f5efe0;--muted:#b8ad92;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--text);font-family:'Bricolage Grotesque',system-ui,sans-serif;line-height:1.5}
+.hero{position:relative;overflow:hidden;border-bottom:2px solid var(--gold);background:var(--ink);color:#fff;text-align:center;padding:56px 24px 48px}
+.hero p{margin:0 auto;max-width:30ch;color:#d8cfb8}
+.hero h1{font-family:'Great Vibes','Brush Script MT',cursive;font-size:clamp(4rem,21vw,7.5rem);line-height:1;margin:6px 0 10px;font-weight:400;color:var(--gold);background:linear-gradient(100deg,#b8892b 0%,#f7e08a 30%,#d4a93c 50%,#f7e08a 70%,#b8892b 100%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 4s linear infinite}
+.hero h2{font-size:1.25rem;font-weight:600;margin:0 0 20px;color:#fff}
+.photo{display:block;width:200px;height:200px;border-radius:50%;object-fit:cover;object-position:50% 40%;border:3px solid var(--gold);margin:0 auto 22px;animation:pop .9s cubic-bezier(.2,1.4,.4,1) both}
+.count{display:flex;justify-content:center;gap:10px;margin-top:28px}
+.count div{background:rgba(212,169,60,.15);border-radius:12px;padding:10px 0;width:68px}
+.count b{display:block;font-size:1.6rem;color:var(--gold)}
+.count span{font-size:.8rem;color:#d8cfb8}
+main{max-width:520px;margin:0 auto;padding:28px 20px 48px}
+.card{background:var(--card);border-radius:16px;padding:20px;margin-bottom:16px;border:1px solid rgba(212,169,60,.35)}
+.card h3{margin:0 0 4px;font-family:'Great Vibes','Brush Script MT',cursive;font-weight:400;font-size:2.1rem;line-height:1.1;color:var(--gold)}
+.card p{margin:0;color:var(--muted)}
+.btns{display:grid;gap:10px;margin-top:14px}
+a.btn{display:block;text-align:center;text-decoration:none;font:600 1rem 'Bricolage Grotesque',system-ui,sans-serif;padding:13px 16px;border-radius:12px;border:2px solid var(--gold);color:var(--gold)}
+a.btn.main{background:var(--gold);color:#000}
+a.btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.foot{text-align:center;color:var(--muted);font-size:.95rem;margin-top:24px}
+.sp{position:absolute;width:14px;height:14px;background:var(--gold);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);animation:tw 2.4s ease-in-out infinite;pointer-events:none}
+@keyframes shine{to{background-position:200% center}}
+@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+@keyframes tw{0%,100%{opacity:.15;transform:scale(.5)}50%{opacity:1;transform:scale(1.3)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <i class="sp" style="left:9%;top:10%"></i><i class="sp" style="right:11%;top:16%;animation-delay:.6s"></i><i class="sp" style="left:16%;top:46%;animation-delay:1.2s;width:10px;height:10px"></i><i class="sp" style="right:7%;top:52%;animation-delay:1.8s;width:10px;height:10px"></i><i class="sp" style="left:12%;bottom:10%;animation-delay:.9s"></i><i class="sp" style="right:15%;bottom:8%;animation-delay:1.5s"></i>
+  <img class="photo" alt="Audrey in her graduation cap and gown" src="photo.jpg">
+  <p>You are invited to celebrate my graduation</p>
+  <h1>Audrey Ongeti</h1>
+  <h2>Bachelor of Science in Data Science</h2>
+  <p>Join me for a graduation lunch with the people who got me here.</p>
+  <div class="count">
+    <div><b id="d">0</b><span>days</span></div>
+    <div><b id="h">0</b><span>hours</span></div>
+    <div><b id="m">0</b><span>mins</span></div>
+  </div>
+</header>
+<main>
+  <section class="card">
+    <h3>When</h3>
+    <p>Saturday, 14 November 2026, from 12:00 noon</p>
+    <div class="btns"><a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Audrey%E2%80%99s%20Graduation%20Lunch&amp;dates=20261114T090000Z/20261114T130000Z&amp;location=Elgonview%20Avenue%203%2C%20Eldoret" target="_blank" rel="noopener">Add to calendar</a></div>
+  </section>
+  <section class="card">
+    <h3>Where</h3>
+    <p>Elgonview Avenue 3, Eldoret</p>
+    <div class="btns"><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Elgonview%20Avenue%203%20Eldoret" target="_blank" rel="noopener">Get directions</a></div>
+  </section>
+  <section class="card">
+    <h3>What to wear</h3>
+    <p>No dress code. Come as you are and bring your appetite.</p>
+  </section>
+  <section class="card">
+    <h3>Will you come?</h3>
+    <p>Please reply by 12 November so I can plan the lunch.</p>
+    <div class="btns">
+      <a class="btn main" href="https://wa.me/254716896689?text=Hi%20Audrey%2C%20I%E2%80%99ll%20be%20attending%20your%20graduation%20lunch%20on%2014%20November." target="_blank" rel="noopener">Yes, I’ll be there</a>
+      <a class="btn" href="https://wa.me/254716896689?text=Hi%20Audrey%2C%20sorry%2C%20I%20can%E2%80%99t%20make%20your%20graduation%20lunch." target="_blank" rel="noopener">Sorry, I can’t make it</a>
+    </div>
+  </section>
+  <p class="foot">Questions? Call or WhatsApp 0716 896 689</p>
+</main>
+<script>
+(function(){
+  var t=new Date('2026-11-14T12:00:00+03:00').getTime();
+  function u(){
+    var s=Math.max(0,Math.floor((t-Date.now())/1000));
+    document.getElementById('d').textContent=Math.floor(s/86400);
+    document.getElementById('h').textContent=Math.floor(s%86400/3600);
+    document.getElementById('m').textContent=Math.floor(s%3600/60);
+  }
+  u();setInterval(u,30000);
+})();
+</script>
+</body>
+</html>
